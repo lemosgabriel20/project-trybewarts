@@ -1,4 +1,4 @@
-/* 1 A 4*/
+/* 1 A 4 */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -26,8 +26,13 @@ main {
 #family-container {
     display: flex;
     flex-direction: column;
+    margin-right: 40px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#family-content-container {
+    display: flex;
 }
