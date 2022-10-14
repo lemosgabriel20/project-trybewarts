@@ -27,17 +27,17 @@ body {
 }
 
 .input-text {
-    border-radius: 8px;
-    padding: 10px;
-    width: 150px;
-    margin-right: 10px;
-    height: 25px;
-    border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 150px;
+  margin-right: 10px;
+  height: 25px;
+  border: none;
 }
 
 #trybewarts-header-title {
-    color: white;
-    font-size: 35px;
+  color: white;
+  font-size: 35px;
 }
 
 main {
@@ -48,12 +48,12 @@ main {
 }
 
 #login-submit {
-    margin-right: 20px;
-    background-color: #4E2C83;
-    color: white;
-    width: 150px;
-    border: none;
-    border-radius: 8px;
+  margin-right: 20px;
+  background-color: #4E2C83;
+  color: white;
+  width: 150px;
+  border: none;
+  border-radius: 8px;
 }
 
 #evaluation-form {
@@ -97,16 +97,16 @@ footer {
 }
 
 .border-bottom {
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
 
 .heading-formulario {
-    text-align: center;
+  text-align: center;
 }
 
 .heading-formulario h1 {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .form-input-text {
@@ -117,31 +117,42 @@ footer {
 }
 
 #house {
-    width: 225px;
-    padding: 8px 0 10px 0;
-    border: none;
-    background-color: white;
-    border-radius: 8px;
+  width: 225px;
+  padding: 8px 0 10px 0;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
 }
 
 input[type=radio] {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 textarea {
-    height: 125px;
+  height: 125px;
 }
 
 #submit-btn {
-    background-color: #4E2C83;
-    color: white;
-    border: none;
-    border-radius: 8px;
+  background-color: lightgrey;
+  color: white;
+  border: none;
+  border-radius: 8px;
 }
 
 footer {
-    background-color: #3C404A;
-    color: white;
-    font-size: 20px;
-    padding: 2px 0;
+  background-color: #3C404A;
+  color: white;
+  font-size: 20px;
+  padding: 2px 0;
 }
+
+#form-data {
+  margin-right: 200px;
+}
+
+/*.teste p {
+  display: inline-block;
+  width: 500px;
+  word-wrap: break-word;
+}
+*/

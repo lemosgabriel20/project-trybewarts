@@ -22,8 +22,10 @@
             </form>
         </nav>
     </header>
+    <form id="form-data">
+    </form>
     <main>
-        <div>
+        <div id="main-form">
             <div class="heading-formulario">
                 <h1>Formulário de Avaliação</h1>
             </div>
@@ -52,20 +54,20 @@
                             <input type="radio" name="family" value="Backend">Família Backend
                         </div>
                         <div>
-                            <input type="radio" name="family" value="FullStack">Família Frontend
+                            <input type="radio" name="family" value="FullStack">Família Fullstack
                         </div>
                     </div>
                     <div id="content-container">
                         <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                         <div>
-                            <input type="checkbox" class="subject" value="HoFs">HoFs
-                            <input type="checkbox" class="subject" value="Jest">Jest
-                            <input type="checkbox" class="subject" value="Promises">Promises
+                            <input type="checkbox" class="subject" name="subject" value="HoFs">HoFs
+                            <input type="checkbox" class="subject" name="subject" value="Jest">Jest
+                            <input type="checkbox" class="subject" name="subject" value="Promises">Promises
                         </div>
                         <div>
-                            <input type="checkbox" class="subject" value="React">React
-                            <input type="checkbox" class="subject" value="SQL">SQL
-                            <input type="checkbox" class="subject" value="Python">Python
+                            <input type="checkbox" class="subject" name="subject" value="React">React
+                            <input type="checkbox" class="subject" name="subject" value="SQL">SQL
+                            <input type="checkbox" class="subject" name="subject" value="Python">Python
                         </div>
                     </div>
                 </div>
@@ -83,7 +85,8 @@
                     <input type="radio" name="rate" value="10">10
                 </div>
                 <label class="textarea">Deixe seu comentário:</label>
-                <textarea maxlength="500"></textarea>
+                <textarea id="textarea" maxlength="500"></textarea>
+                <p id="counter">500</p>
                 <div>
                     <label id="label-infos">Você concorda com o uso das informações acima?</label>
                     <input type="checkbox" id="agreement">
@@ -91,6 +94,7 @@
                 <button disabled type="submit" id="submit-btn">Enviar</button>
             </form>
         </div>
+        
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
     <footer>
