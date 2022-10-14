@@ -1,3 +1,7 @@
+body {
+    background-color:#EFEFEF;
+}
+
 /* 1 A 4 */
 .header {
   display: flex;
