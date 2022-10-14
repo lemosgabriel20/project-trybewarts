@@ -1,9 +1,10 @@
-const submitButton = document.querySelector('#login-submit');
+const submitLoginButton = document.querySelector('#login-submit');
+const submitFormButton = document.querySelector('#submit-btn');
 const email = document.querySelector('#email');
 const password = document.querySelector('#input-password');
-console.log(submitButton);
+const agreement = document.querySelector('#agreement');
 
-submitButton.addEventListener('click', (event) => {
+submitLoginButton.addEventListener('click', (event) => {
   event.preventDefault();
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
     alert('Olá, Tryber!');
@@ -11,3 +12,11 @@ submitButton.addEventListener('click', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+agreement.addEventListener('change', () => {
+    if (agreement.checked) {
+        submitFormButton.removeAttribute('disabled');
+    } else {
+        submitFormButton.setAttribute('disabled', '');
+    }
+})
