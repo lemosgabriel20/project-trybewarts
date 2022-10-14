@@ -1,24 +1,59 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inknut Antiqua', serif;
 }
 
 body {
-    background-color:#EFEFEF;
+  background-color:#EFEFEF;
 }
 
 /* 1 A 4 */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-login {
   display: flex;
 }
 
+.trybewarts-header-logo {
+  width: 75px;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.input-text {
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+    margin-right: 10px;
+    height: 25px;
+    border: none;
+}
+
+#trybewarts-header-title {
+    color: white;
+    font-size: 35px;
+}
+
 main {
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+#login-submit {
+    margin-right: 20px;
+    background-color: #4E2C83;
+    color: white;
+    width: 150px;
+    border: none;
+    border-radius: 8px;
 }
 
 #evaluation-form {
@@ -28,27 +63,85 @@ main {
 }
 
 #name-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #family-container {
-    display: flex;
-    flex-direction: column;
-    margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 40px;
+  white-space: nowrap;
+  width: 200px;
+}
+
+#content-container {
+  margin-left: 100px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  padding-left: 125px;
+  align-self: center;
 }
 
 #family-content-container {
-    display: flex;
+  display: flex;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.border-bottom {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.heading-formulario {
     text-align: center;
+}
+
+.heading-formulario h1 {
+    font-size: 25px;
+}
+
+.form-input-text {
+  border: none;
+  padding: 5px 0 5px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+#house {
+    width: 225px;
+    padding: 8px 0 10px 0;
+    border: none;
+    background-color: white;
+    border-radius: 8px;
+}
+
+input[type=radio] {
+    margin-left: 5px;
+}
+
+textarea {
+    height: 125px;
+}
+
+#submit-btn {
+    background-color: #4E2C83;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #3C404A;
+    color: white;
+    font-size: 20px;
+    padding: 2px 0;
 }
