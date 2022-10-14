@@ -13,7 +13,7 @@
             <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
             <h1 id="trybewarts-header-title">Trybewarts</h1>
             <form action="" method="GET" class="trybewarts-login">
-                <input class="input-text" required type="email" id="input-email" name="email" placeholder="Email">
+                <input class="input-text" required type="email" id="email" name="email" placeholder="Email">
                 <input class="input-text" required type="password" id="input-password" name="password" placeholder="Senha">
                 <button type="submit" id="submit">Entrar</button>
             </form>
@@ -22,16 +22,36 @@
     <main>
         <form action="" method="GET" id="evaluation-form">
             <div>
-                <input id="input-name" placeholder="Nome">
-                <input id="input-lastname" placeholder="Sobrenome">
+                <input type="text" id="input-name" placeholder="Nome">
+                <input type="text" id="input-lastname" placeholder="Sobrenome">
             </div>
-            <input id="input-email" placeholder="Email">
-            <select id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
+            <div>
+                <input type="email" id="input-email" name="email" placeholder="Email">
+                <label for="house">Casa:</label>
+                <select id="house">
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+            </div>
+            <div>
+                <div id="family-container">
+                    <label id="label-family" for="">Qual sua família?</label>
+                    <div>
+                        <input type="radio" name="family" value="Frontend">Frontend
+                    </div>
+                    <div>
+                        <input type="radio" name="family" value="Backend">Backend
+                    </div>
+                    <div>
+                        <input type="radio" name="family" value="FullStack">Frontend
+                    </div>
+                </div>
+                <div id="content-container">
+                    
+                </div>
+            </div>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
