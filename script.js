@@ -35,18 +35,15 @@ const formData = document.querySelector('#form-data');
 const nomeData = document.querySelector('#input-name');
 const sobreNomeData = document.querySelector('#input-lastname');
 const emailData = document.querySelector('#input-email');
-const casaData = document.querySelector('#house');
+const casaData = document.getElementById('house');
 const familiaData = document.querySelectorAll('[name="family"]');
 const materiasData = document.querySelectorAll('[name="subject"]');
 const avaliacaoData = document.querySelectorAll('[name="rate"]');
-console.log(nomeData.value)
 const mainForm = document.querySelector('#main-form');
 
-
-const casa = casaData.value;
+let casa = casaData.value;
 let familia = null;
 let avaliacao = null;
-
 
 const createFamilia = () => {
   for (let i = 0; i < familiaData.length; i += 1) {
@@ -56,7 +53,7 @@ const createFamilia = () => {
   }
 };
 
-const createMaterias = () => {
+const createMaterias = (materias) => {
   for (let i = 0; i < materiasData.length; i += 1) {
     if (materiasData[i].checked) {
       materias.push(materiasData[i].value);
@@ -72,28 +69,40 @@ const createAvaliacao = () => {
   }
 };
 
-submitFormButton.addEventListener('click', (event) => {
-  event.preventDefault();
+casaData.addEventListener('change', () => {
+  casa = casaData.value;
+});
+
+const createAll = (materias) => {
+  createFamilia();
+  createMaterias(materias);
+  createAvaliacao();
+};
+
+const sendToForm = () => {
   const nome = nomeData.value;
   const sobreNome = sobreNomeData.value;
   const email = emailData.value;
-  const materias = [];
+  let materias = [];
   const observacao = textarea.value;
-  mainForm.style.display = 'none';
-  createFamilia();
-  createMaterias();
-  createAvaliacao();
-  console.log(nome)
+  createAll(materias);
+  materias = materias.join(', ');
   formData.innerHTML = `
   <p>Nome: ${nome} ${sobreNome}</p>
   <p>Email: ${email}</p>
   <p>Casa: ${casa}</p>
   <p>Família: ${familia}</p>
   <p>Matérias: ${materias}</p>
-  <p>Avaliações: ${avaliacao}</p>
+  <p>Avaliação: ${avaliacao}</p>
   <div class="teste">
     <p>Observações: ${observacao}</p>
   </div>
   `;
-});
+};
 
+submitFormButton.addEventListener('click', (event) => {
+  event.preventDefault();
+  mainForm.style.display = 'none';
+  formData.style.display = 'flex';
+  sendToForm();
+});
