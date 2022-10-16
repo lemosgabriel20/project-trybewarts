@@ -1,11 +1,11 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Inknut Antiqua', serif;
+  font-family: Inknut Antiqua, serif;
 }
 
 body {
-  background-color:#EFEFEF;
+  background-color: #efefef;
 }
 
 /* 1 A 4 */
@@ -49,7 +49,7 @@ main {
 
 #login-submit {
   margin-right: 20px;
-  background-color: #4E2C83;
+  background-color: #4e2c83;
   color: white;
   width: 150px;
   border: none;
@@ -94,6 +94,10 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
+  background-color: #3c404a;
+  color: white;
+  font-size: 20px;
+  padding: 2px 0;
 }
 
 .border-bottom {
@@ -118,13 +122,13 @@ footer {
 
 #house {
   width: 225px;
-  padding: 8px 0 10px 0;
+  padding: 8px 0 10px;
   border: none;
   background-color: white;
   border-radius: 8px;
 }
 
-input[type=radio] {
+input[ type = 'radio' ] {
   margin-left: 5px;
 }
 
@@ -137,13 +141,6 @@ textarea {
   color: white;
   border: none;
   border-radius: 8px;
-}
-
-footer {
-  background-color: #3C404A;
-  color: white;
-  font-size: 20px;
-  padding: 2px 0;
 }
 
 #form-data {
